@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-5</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisyui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="bg-white px-6 py-3 rounded-lg shadow">
+      <div
+        class="navbar flex flex-col sm:flex-row justify-between items-center gap-4 "
+      >
+        <div class="logo flex justify-between items-center gap-2">
+          <img src="./assets/logo.png" alt="" class="w-12" />
+          <h1 class="text-[#006747] font-bold text-xl">Emergency <br />Service</h1>
+        </div>
+        <div class="flex items-center gap-5">
+          <div class="flex items-center gap-1 w-7">
+            <span>0</span><img class="w-12" src="./assets/heart.png" alt="" />
+          </div>
+          <div class="flex items-center gap-1 w-7 mx-3">
+            <span>100</span><img class="w-12" src="./assets/coin.png" alt="" />
+          </div>
+
+          <div>
+            <button
+              class="bg-[#00a63e] px-6 py-2 rounded-3xl text-[#ffffff] font-semibold text-sm">
+              <span> 0 </span>Copy
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section
+      class="banner w-full h-40 bg-gradient-to-r from-[#013123] via-[#006747] to-[#013223]"
+    >
+      <div
+        class="flex flex-row sm:flex-col justify-center items-center gap-2 pt-3 text-[#ffffff]"
+      >
+        <div class="banner-logo w-12">
+          <img src="./assets/logo-dark.png" alt="" />
+        </div>
+        <h2 class="font-bold text-4xl">Emergency Service Directory</h2>
+        <p class="font-semibold text-xl">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </section>
+
+    
+
+        
+     <section id="main-section" class="w-11/12 mx-auto py-7 grid grid-cols-12 gap-7 bg-[#f5fff6]">
+       <section id="card-section" class="col-span-9">
+        
+          <div class="card-items grid grid-cols-3 gap-7">
+            <div class="card">
+            <div class="flex justify-between w-4">
+              <img src="./assets/emergency.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3 class="relavant-name">National Emergency Number</h3>
+            <h5 class="relavant-english-name">National Emergency</h5>
+            <h2 class="hotline-number">999</h2>
+            <div><button>All</button></div>
+            <div class="flex gap-3">
+              <button><i class="fa-regular fa-copy"></i>Copy</button>
+            <button><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <div class="card ">
+            <div class="flex justify-between w-4">
+              <img src="./assets/police.png" alt="">
+             <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3 class="relavant-name">Police Helpline Number</h3>
+            <h5 class="relavant-english-name">Police</h5>
+            <h2 class="hotline-number">999</h2>
+            <div><button>Police</button></div>
+            <div class="flex gap-3">
+              <button><i class="fa-regular fa-copy"></i>Copy</button>
+            <button><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <div class="card ">
+            <div class="flex justify-between w-4 ">
+              <img src="./assets/fire-service.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3 class="relavant-name">Fire Service Number</h3>
+            <h5 class="relavant-english-name">Fire Service </h5>
+            <h2 class="hotline-number">999</h2>
+            <div><button>Fire</button></div>
+            <div class="flex gap-3">
+              <button><i class="fa-regular fa-copy"></i>Copy</button>
+            <button><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex justify-between w-4 ">
+              <img src="./assets/ambulance.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3 class="relavant-name">Ambulance Service</h3>
+            <h5 class="relavant-english-name">Ambulance</h5>
+            <h2 class="hotline-number">1994-999999</h2>
+            <div><button>Health</button></div>
+            <div class="flex gap-3">
+              <button><i class="fa-regular fa-copy"></i>Copy</button>
+            <button><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex justify-between w-4 ">
+              <img src="./assets/emergency.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3 class="relavant-name">Women & Child Helpline</h3>
+            <h5 class="relavant-english-name">Women & Child Helpline</h5>
+            <h2 class="hotline-number">109</h2>
+            <div><button>Help</button></div>
+            <div class="flex gap-3">
+              <button><i class="fa-regular fa-copy"></i>Copy</button>
+            <button><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <div class="card ">
+            <div class="flex justify-between w-4 ">
+              <img src="./assets/emergency.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3 class="relavant-name">Anti-Corruption Helpline</h3>
+            <h5 class="relavant-english-name">Anti-Corruption</h5>
+            <h2 class="hotline-number">106</h2>
+            <div><button>Govt</button></div>
+            <div class="flex gap-3">
+              <button><i class="fa-regular fa-copy"></i>Copy</button>
+            <button><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <div class="card ">
+            <div class="flex justify-between w-4 ">
+              <img src="./assets/emergency.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3 class="relavant-name">Electricity Helpline</h3>
+            <h5 class="relavant-english-name">Electricity Outage</h5>
+            <h2 class="hotline-number">16216</h2>
+            <div><button>Electricity</button></div>
+            <div class="flex gap-3">
+              <button><i class="fa-regular fa-copy"></i>Copy</button>
+            <button><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <div class="card ">
+            <div class="flex justify-between w-4 ">
+              <img src="./assets/brac.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3 class="relavant-name">Brac Helpline</h3>
+            <h5 class="relavant-english-name">Brac</h5>
+            <h2 class="hotline-number">16445</h2>
+            <div><button>NGO</button></div>
+            <div class="flex gap-3">
+              <button><i class="fa-regular fa-copy"></i>Copy</button>
+            <button><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <div class="card ">
+            <div class="flex justify-between items-center w-4">
+              <img src="./assets/emergency.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3 class="relavant-name">Bangladesh Railway Helpline </h3>
+            <h5 class="relavant-english-name">Bangladesh Railway</h5>
+            <h2 class="hotline-number">163</h2>
+            <div><button>Travel</button></div>
+            <div class="flex gap-3">
+              <button><i class="fa-regular fa-copy"></i>Copy</button>
+            <button><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          </div>
+        
+      </section>
+      
+      <section id="history-section" class="col-span-3">
+        <div class="flex justify-between items-center">
+          <p class="text-xl font-medium"><i class="fa-regular fa-clock"></i>Call History</p>
+          <button id="clear-btn" class="bg-[#00A63E] rounded-3xl text-[#ffffff] font-semibold text-sm py-3 px-9">Clear</button>
+        </div>
+      </section>
+     </section>
+   
+      
+    <script src="./script.js"></script>
+  </body>
+</html>
