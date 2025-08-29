@@ -1,10 +1,5 @@
- // function to get innerText
-    function getInnerText(id){
-        const element = document.getElementById(id);
-        const elementValue = element.innerText;
-        const elementValueNumber = parseInt(elementValue);
-        return elementValueNumber;
-    }
+
+let historyContainer = document.getElementById("history-container");
 
 // heart icon increment
  let heartCount = document.getElementById("heart-count");
@@ -31,22 +26,55 @@ for(let btn of callBtns){
         let name = parent.children[1].innerText;
         // console.log(parent.children);
         let hotlineNumber = parent.children[3].innerText;
+
+        const dateTime= new Date().toLocaleTimeString()
+
         // console.log(name, hotlineNumber);
         alert(`Calling ${name} ${hotlineNumber}...`);
 
         coinsCount.innerText = currentCoins - 20;
 
-       let historyContainer = document.getElementById("history-container");
-        historyContainer.innerText = ""
+        
         const div = document.createElement("div");
         div.innerHTML = `
-          <div>
-            <div>
-            <h3>${name}</h3>
-            <h4>${hotlineNumber}</h4>
+          <div class='flex flex-col sm:flex-row  sm:items-center gap-2 justify-between mt-5 rounded-lg shadow-sm w-full bg-[#FAFAFA] sm:px-3 px-2 py-3'>
+            <div class="flex flex-col sm:flex-row sm:items-center gap-2 w-full">
+            <h3 class='text-xl font-semibold py-1'>${name}</h3>
+            <h4 class="text-sm text-gray-600">${hotlineNumber}</h4>
+            </div>
+
+            <div class='text-[13px] mt-1 sm:mt-0'>
+            ${dateTime}
             </div>
             </div>
         `
         historyContainer.appendChild(div);
+    })
+}
+
+
+
+document.getElementById('clear-btn').addEventListener('click',function () {
+    historyContainer.innerHTML=''
+})
+
+
+
+
+const copyBtn=document.querySelectorAll('.copy-btn')
+
+let copyCount=document.getElementById('copy-count')
+
+let copyCountNum=parseInt(copyCount.innerText)
+
+for (const btn of copyBtn) {
+    btn.addEventListener('click',function(){
+        const hotlineNumberCpy=btn.closest('.card').querySelector('.hotline-number').innerText
+
+        navigator.clipboard.writeText(hotlineNumberCpy)
+        alert("Copied: " + hotlineNumberCpy)
+         
+        copyCount.innerText=copyCountNum += 1
+        
     })
 }

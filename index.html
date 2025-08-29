@@ -21,6 +21,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <header class="bg-white px-6 py-3 rounded-lg shadow">
       <div
@@ -32,9 +33,9 @@
             Emergency <br />Service
           </h1>
         </div>
-        <div class="flex items-center gap-5">
+        <div class="flex flex-row items-center gap-3 sm:gap-5">
           <div
-            class="flex items-center px-6 py-2 bg-[#41ff6b1a] gap-2 rounded-full"
+            class="flex items-center justify-center px-6 py-2 gap-2 rounded-full bg-[#41ff6b1a]"
           >
             <span id="heart-count">0</span
             ><img class="w-6" src="./assets/heart.png" alt="" />
@@ -50,7 +51,7 @@
             <button
               class="bg-[#00a63e] px-6 py-2 rounded-3xl text-[#ffffff] font-semibold text-sm"
             >
-              <span> 0 </span>Copy
+              <span id="copy-count" class="px-3"> 0 </span>Copy
             </button>
           </div>
         </div>
@@ -58,16 +59,20 @@
     </header>
 
     <section
-      class="banner w-full h-40 bg-gradient-to-r from-[#013123] via-[#006747] to-[#013223]"
+      class="banner w-full h-80 py-6 bg-gradient-to-r from-[#013123] via-[#006747] to-[#013223]"
     >
       <div
-        class="flex flex-row sm:flex-col justify-center items-center gap-2 pt-3 text-[#ffffff]"
+        class="flex flex-col justify-between items-center gap-4 text-white text-center px-4 py-6 space-y-2"
       >
-        <div class="banner-logo w-12">
-          <img src="./assets/logo-dark.png" alt="" />
+        <div class="banner-logo w-16">
+          <img class="w-full h-auto" src="./assets/logo-dark.png" alt="" />
         </div>
-        <h2 class="font-bold text-4xl">Emergency Service Directory</h2>
-        <p class="font-semibold text-xl">
+        <h2 class="font-bold text-3xl sm:text-4xl lg:text-5xl">
+          Emergency Service Directory
+        </h2>
+        <p
+          class="font-semibold text-base sm:text-lg lg:text-xl max-w-full mb-0 pb-0 overflow-x-auto"
+        >
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
@@ -96,7 +101,7 @@
               </button>
             </div>
             <div class="flex gap-3 my-3 items-center justify-center">
-              <button class="px-5 py-2 w-[50%] border rounded">
+              <button class="px-5 py-2 w-[50%] border rounded copy-btn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
@@ -123,7 +128,7 @@
               </button>
             </div>
             <div class="flex gap-3 my-3 items-center justify-center">
-              <button class="px-5 py-2 w-[50%] border rounded">
+              <button class="px-5 py-2 w-[50%] border rounded copy-btn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
@@ -150,7 +155,7 @@
               </button>
             </div>
             <div class="flex gap-3 my-3 items-center justify-center">
-              <button class="px-5 py-2 w-[50%] border rounded">
+              <button class="px-5 py-2 w-[50%] border rounded copy-btn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
@@ -177,7 +182,7 @@
               </button>
             </div>
             <div class="flex gap-3 my-3 items-center justify-center">
-              <button class="px-5 py-2 w-[50%] border rounded">
+              <button class="px-5 py-2 w-[50%] border rounded copy-btn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
@@ -204,7 +209,7 @@
               </button>
             </div>
             <div class="flex gap-3 my-3 items-center justify-center">
-              <button class="px-5 py-2 w-[50%] border rounded">
+              <button class="px-5 py-2 w-[50%] border rounded copy-btn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
@@ -231,7 +236,7 @@
               </button>
             </div>
             <div class="flex gap-3 my-3 items-center justify-center">
-              <button class="px-5 py-2 w-[50%] border rounded">
+              <button class="px-5 py-2 w-[50%] border rounded copy-btn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
@@ -258,7 +263,7 @@
               </button>
             </div>
             <div class="flex gap-3 my-3 items-center justify-center">
-              <button class="px-5 py-2 w-[50%] border rounded">
+              <button class="px-5 py-2 w-[50%] border rounded copy-btn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
@@ -283,7 +288,7 @@
               </button>
             </div>
             <div class="flex gap-3 my-3 items-center justify-center">
-              <button class="px-5 py-2 w-[50%] border rounded">
+              <button class="px-5 py-2 w-[50%] border rounded copy-btn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
@@ -310,7 +315,7 @@
               </button>
             </div>
             <div class="flex gap-3 my-3 items-center justify-center">
-              <button class="px-5 py-2 w-[50%] border rounded">
+              <button class="px-5 py-2 w-[50%] border rounded copy-btn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
@@ -323,22 +328,26 @@
         </div>
       </section>
 
-      <section id="history-section" class="col-span-3">
-        <div class="flex justify-between items-center">
-          <p class="text-xl font-medium">
+      <section
+        id="history-section"
+        class="col-span-3 bg-white px-0 sm:px-6 py-4 rounded-lg shadow w-full"
+      >
+        <div
+          class="flex flex-col sm:flex-row justify-between items-center gap-3 mb-4 w-full"
+        >
+          <p class="flex items-center text-xl font-medium w-full sm:w-auto">
             <i class="fa-regular fa-clock mx-2"></i>Call History
           </p>
           <button
             id="clear-btn"
-            class="bg-[#00A63E] rounded-3xl text-[#ffffff] font-semibold text-sm py-3 px-9"
+            class="bg-[#00A63E] rounded-3xl text-white font-semibold text-sm py-3 px-6 sm:px-9 w-full sm:w-auto"
           >
             Clear
           </button>
         </div>
-      </section>
-      <div id="history-container">
 
-      </div>
+        <div id="history-container" ></div>
+      </section>
     </section>
 
     <script src="./script.js"></script>
