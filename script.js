@@ -38,7 +38,7 @@ for(let btn of callBtns){
         const div = document.createElement("div");
         div.innerHTML = `
           <div class='flex flex-col sm:flex-row  sm:items-center gap-2 justify-between mt-5 rounded-lg shadow-sm w-full bg-[#FAFAFA] sm:px-3 px-2 py-3'>
-            <div class="flex flex-col sm:flex-row sm:items-center gap-2 w-full">
+            <div class="flex flex-col gap-2 w-full">
             <h3 class='text-xl font-semibold py-1'>${name}</h3>
             <h4 class="text-sm text-gray-600">${hotlineNumber}</h4>
             </div>
